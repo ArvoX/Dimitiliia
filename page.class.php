@@ -39,7 +39,7 @@ class page implements Iterator
 	
 	public function add(element $element)
 	{
-		$this->elements[$element->getOrder()] = $element;
+		$this->elements[] = $element;
 	}
 }
 ?>
