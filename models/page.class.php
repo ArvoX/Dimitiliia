@@ -16,23 +16,23 @@ class page implements Iterator
 	}
 	
 	//Iterator
-	public current()
+	public function current()
 	{
 		return $this->elements[$this->pointer];
 	}
-	public key()
+	public function key()
 	{
 		return $this->pointer;
 	}
-	public next()
+	public function next()
 	{
 		$this->pointer++;
 	}
-	public rewind()
+	public function rewind()
 	{
 		$this->pointer = 0;
 	}
-	public valid()
+	public function valid()
 	{
 		return isset($this->elements[$this->pointer]);
 	}

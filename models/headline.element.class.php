@@ -1,6 +1,9 @@
 <?php
-class headlineElement extends element
+class headlineElement implements element
 {
-
+	public function type()
+	{
+		return __CLASS__;
+	}
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
-interface pageElement
+interface element
 {
-	
+	public function type();
 }
 ?>

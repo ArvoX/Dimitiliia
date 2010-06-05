@@ -1,6 +1,9 @@
 <?php
-class textElement extends element
+class textElement implements element
 {
-
+	public function type()
+	{
+		return __CLASS__;
+	}
 }
 ?>
